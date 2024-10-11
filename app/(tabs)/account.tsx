@@ -1,10 +1,13 @@
-import {Text,View} from "react-native"
+import { View, Text } from 'react-native'
+import React from 'react'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
-const account = ()=>{
-    return (
+export default function account() {
+  return (
+    <SafeAreaView>
         <View>
-            <Text>Account</Text>
+            <Text>Account page</Text>
         </View>
-    )
+    </SafeAreaView>
+  )
 }
-export default account

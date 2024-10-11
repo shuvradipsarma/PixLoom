@@ -1,12 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const liked = ()=>{
+export default function liked() {
   return (
     <View>
-      <Text>library</Text>
+      <Text>Liked page</Text>
     </View>
   )
 }
-
-export default liked

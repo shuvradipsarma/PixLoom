@@ -1,12 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const AccInfo = ()=> {
+export default function accountInfo() {
   return (
     <View>
-      <Text>Account Information Page</Text>
+      <Text>Account Info Page</Text>
     </View>
   )
 }
-
-export default AccInfo

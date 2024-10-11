@@ -1,12 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const suggested = ()=>{
+export default function suggested() {
   return (
     <View>
-      <Text>library</Text>
+      <Text>Suggested page</Text>
     </View>
   )
 }
-
-export default suggested
