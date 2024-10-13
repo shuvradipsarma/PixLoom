@@ -1,33 +1,47 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { View,Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Tab = createMaterialTopTabNavigator();
 
 export default function ForYou() {
   return (
+
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Suggested" component={SuggestedScreen} />
+        <Tab.Screen name="Liked" component={LikedScreen} />
+        <Tab.Screen name="Library" component={LibraryScreen}/>
     </Tab.Navigator>
+    
+    
   );
 }
 
-function HomeScreen()
+function SuggestedScreen()
 {
     return(
         <View>
-            <Text>Home Screen</Text>
+            <Text>Suggested Screen</Text>
         </View>
     )
 }
-function SettingsScreen(){
+function LikedScreen()
+{
     return(
         <View>
-            <Text>Settings Screen</Text>
+            <Text>Liked Screen</Text>
         </View>
     )
 }
 
+function LibraryScreen()
+{
+    return (
+        <View>
+            <Text>Library Screen</Text>
+        </View>
+    )
+}
 
 
 
