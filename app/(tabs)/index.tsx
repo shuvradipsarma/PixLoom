@@ -5,16 +5,16 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const Tab = createMaterialTopTabNavigator();
 
 export default function ForYou() {
-  return (
-
-    <Tab.Navigator>
-        <Tab.Screen name="Suggested" component={SuggestedScreen} />
-        <Tab.Screen name="Liked" component={LikedScreen} />
-        <Tab.Screen name="Library" component={LibraryScreen}/>
-    </Tab.Navigator>
+    return (
+        <SafeAreaView style={{ flex: 1 }}>
+          <Tab.Navigator>
+            <Tab.Screen name="Suggested" component={SuggestedScreen} />
+            <Tab.Screen name="Liked" component={LikedScreen} />
+            <Tab.Screen name="Library" component={LibraryScreen} />
+          </Tab.Navigator>
+        </SafeAreaView>
+    );
     
-    
-  );
 }
 
 function SuggestedScreen()
